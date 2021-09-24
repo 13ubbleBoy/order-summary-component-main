@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background: url(images/pattern-background-desktop.svg);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+}
+/* @media only screen and (max-width: 700px) {
+    body {
+        background: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-color: hsl(225, 100%, 94%);
+    }
+  } */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.order-summary-card{
+    width: 350px;
+    height: 520px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.head img{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px 20px 0px 0px;
+}
+.order-summary{
+    text-align: center;
+}
+.order-summary h2{
+    color: hsl(223, 47%, 23%);
+    margin-top: 10px;
+    line-height: 55px;
+}
+.order-summary p{
+    line-height: 22px;
+    font-weight: 100;
+    font-size: 14px;
+    color: hsl(224, 23%, 55%)
+}
+.order-summary-card .annual-plan{    
+    margin: auto;
+    margin-top: 15px;
+    width: 80%;
+    height: 15%;
+    border-radius: 10px;
+    background: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.annual-plan .music{
+    margin-top: 5px;
+    height: auto;
+}
+.annual-plan .per-year{
+    position: relative;
+    right: 20px;
+}
+.annual-plan .per-year h5{
+    color:hsl(223, 47%, 23%);
+}
+.annual-plan .per-year p{
+    font-size: smaller;
+    color: hsl(224, 23%, 55%);
+}
+.annual-plan .change a{
+    font-size: small;
+    color: hsl(245, 75%, 52%);
+}
+.annual-plan .change a:hover{
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+}
+
+.proceed{
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    height: 7%;
+    border-radius: 10px;
+    background: hsl(245, 75%, 52%);
+    transition: 1s background-color;
+}
+.proceed h5{
+    text-align: center;
+    color: hsl(225, 100%, 94%);
+    position: relative;
+    top: 11px;
+    word-spacing: 1px;
+    font-size: 12px;
+}
+.proceed a{
+    text-decoration: none;
+}
+.proceed:hover{
+    background-color: #8A8AFF;
+}
+.cancel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cancel a{
+    font-size: small;
+    text-decoration: none;
+    color:hsl(224, 23%, 55%);
+    position: relative;
+    top: 20px;
+    font-weight: 700;
+}
+.cancel a:hover{
+    color: hsl(223, 47%, 23%);
+}
